@@ -1,9 +1,24 @@
+import Message from "../components/layout/Message";
+import styles from './Project.module.css'
+import {useLocation} from 'react-router-dom'
+
 function Project() {
+
+    const location = useLocation();
+    let message = '';
+
+    if(location.state) {
+        message = location.state.message; 
+        
+    }
+
     return(
-        <>
-        <h1>Project</h1>
-        <p>Texto da Project</p>
-        </>
+        <div className={styles.project_container}>
+        <h1>Projetos</h1>
+        {message && (
+            <Message msg = {message} type="success"/>
+        ) }
+        </div>
     )
 }
 export default Project; 
