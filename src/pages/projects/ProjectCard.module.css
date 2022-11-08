@@ -1,0 +1,83 @@
+.card {
+    min-width: 250px;
+    border: 1px solid rgb(155, 155, 155);
+    width: 23%;
+    margin: .5em;
+    padding: 0.5em;
+}
+.card h4 {
+    background-color: #222;
+    color: orange;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.card p {
+    color: rgb(122, 122, 122);
+    margin-bottom: 1em;
+}
+
+.card p span {
+    font-weight: bolder;
+}
+
+.card_category_text {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+.card_category_text span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.Infra {
+    background-color: blueviolet;
+}
+.Design {
+    background-color: rgb(43, 226, 119);
+}
+.Engenharia {
+    background-color: rgb(226, 162, 43);
+}
+.Desenvolvimento {
+    background-color: rgb(226, 43, 144);
+}
+
+.Planejamento {
+    background-color: rgb(31, 31, 31);
+}
+
+.project_card_actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} 
+
+.project_card_actions a, .project_card_actions button {
+    text-decoration: none;
+    background-color: rgb(218, 218, 218);
+    color: rgb(58, 58, 58);
+    margin: 1em 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1em;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_card_actions a:hover, .project_card_actions button:hover {
+    color: orange;
+    background-color: #222;
+}
